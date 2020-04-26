@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNTEMAD GEEK CLUB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+        <div class="container">
+            <img src="img/logo.png" alt="logo" class="logo">
+            <p class="logo-text">CNTEMAD GEEK CLUB</p>
+            <div class="header-text">
+                <h1>Nos valeurs </h1>
+                <h2>Réalisation et pratique</h2>
+                <span class="square"></span>
+                <p>Parvenir à une parfaite <strong>réalisation</strong> de sa nature, c'est pour cela que nous sommes tous ici.</p><br>
+                <p>Par l'exemple, on peut devenir une parole vivante. Mets-le en <strong>pratique</strong>  et tu croiras sans avoir vu.</p>
+                <button class="common-btn">En savoir plus</button>
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <nav id="sideNav">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">MEMBRES</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </nav>
+    <img src="img/menu.png" alt="menu" id="menuBtn">
+
+    <!-- objectifs -->
+
+    <section id="target">
+        <div class="target-left-col">
+            <img src="img/about.png" alt="objectifs" >
+        </div>
+        <div class="target-right-col">
+            <div class="target-text">
+                <h1>Objectifs</h1>
+                <ul class="list-target">
+                    <li>Communication entre etudiant</li>
+                    <li>Pratiquer ensemble</li>
+                    <li>Realise des projet ensemble</li>
+                    <li>Valorise l'etablissement</li>
+                </ul>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- javascript pour l'animatio menu sidebar -->
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+
+        sideNav.style.right = "-250px";
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+            }
+            else{
+                sideNav.style.right = "-250px"
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
